@@ -17,6 +17,35 @@ Think of data types as **different kinds of information**:
 
 > These are the **building blocks** of JS. Each holds a single value and is **immutable**.
 
+
+## Primitive or Immutable Data Types:
+
+Immutable data types cannot be changed after their creation. Any operation that appears to modify an immutable value actually results in the creation of a new value.
+
+Primitive values (strings, numbers, booleans, undefined, null, bigint, symbol) are immutable in JavaScript.
+
+```js
+    let myString = "hello";
+    myString = myString + " world"; // Creates a new string, doesn't modify "hello"
+    console.log(myString); // Output: "hello world"
+
+    let myNumber = 10;
+    myNumber = myNumber + 5; // Creates a new number, doesn't modify 10
+    console.log(myNumber); // Output: 15
+```
+---
+
+## 🔍 Type Checking with `typeof`
+
+```js
+console.log(typeof "Hello");  // string
+console.log(typeof 10);       // number
+console.log(typeof true);     // boolean
+console.log(typeof {});       // object
+console.log(typeof []);       // object ✅
+console.log(typeof null);     // object ❗ (weird JS behavior)
+```
+
 ---
 
 ### 1. **String** – Text values
@@ -107,6 +136,21 @@ let bigNum = 123456789123456789123456789n;
 
 > These types store **collections**, and they are **mutable**.
 
+
+## Mutable Data Types:
+
+Mutable data types can be modified in place after their creation. Changes directly alter the original value.
+
+Objects and arrays are inherently mutable in JavaScript.
+```js    let myObject = { name: "Alice", age: 30 };
+    myObject.age = 31; // Modifies the original object
+    console.log(myObject); // Output: { name: "Alice", age: 31 }
+
+    let myArray = [1, 2, 3];
+    myArray.push(4); // Modifies the original array
+    console.log(myArray); // Output: [1, 2, 3, 4]
+```
+
 ---
 
 ### 1. **Object** – Key-value pairs
@@ -180,20 +224,6 @@ x = [1, 2, 3];    // Now it's an Array
 
 > 📌 The type belongs to the **value**, not the variable.
 
----
-
-## 🔍 Type Checking with `typeof`
-
-```js
-console.log(typeof "Hello");  // string
-console.log(typeof 10);       // number
-console.log(typeof true);     // boolean
-console.log(typeof {});       // object
-console.log(typeof []);       // object ✅
-console.log(typeof null);     // object ❗ (weird JS behavior)
-```
-
----
 
 ## 🔍 JavaScript Weird Facts
 
@@ -282,7 +312,7 @@ console.log(typeof city);        // undefined
 
 ---
 
-## 🧩 Mini Project Idea: User Profile Card
+## 🧩 Let's create a User Profile Card
 
 Create a profile using all data types:
 
