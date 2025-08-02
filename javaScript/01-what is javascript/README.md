@@ -5,6 +5,14 @@
 
 ---
 
+## Prerquist to take this course ? 
+
+**HTML and CSS**
+
+I have uploaded complete course on HTML and CSS , you can watch it first then take this course.
+
+
+
 > “You don’t have to be great to start. But you have to start to be great.”
 > — **Zig Ziglar**
 
@@ -90,16 +98,18 @@ JavaScript is:
 
 ---
 
-## 🌐 Where is JavaScript Used?
+## 🌐 Where Is JavaScript Used Today?
 
-| Field        | Use Case               | Tools        |
-| ------------ | ---------------------- | ------------ |
-| Web Frontend | Websites, SPAs         | React, Vue   |
-| Backend      | Server apps, APIs      | Node.js      |
-| Mobile       | Cross-platform apps    | React Native |
-| Desktop      | Windows/Mac/Linux apps | Electron     |
-| Games        | Web-based games        | Phaser       |
-| IoT          | Smart devices          | Johnny-Five  |
+| Domain       | Use Case                          | Tools/Frameworks      |
+| ------------ | --------------------------------- | --------------------- |
+| Web Frontend | Interactive UIs, SPAs             | React, Vue, Angular   |
+| Backend      | APIs, server-side apps            | Node.js, Express      |
+| Mobile       | iOS & Android apps                | React Native          |
+| Desktop      | Windows/Mac/Linux apps            | Electron              |
+| Games        | Web-based games, 2D/3D engines    | Phaser, Babylon.js    |
+| AI & Data    | Browser AI, visualization         | TensorFlow\.js, D3.js |
+| IoT          | Hardware control with JS          | Johnny-Five           |
+| Web3         | DApps, blockchain smart contracts | Web3.js, Ethers.js    |
 
 ---
 
@@ -123,20 +133,6 @@ JavaScript is:
 
 ---
 
-## 🌐 Where Is JavaScript Used Today?
-
-| Domain       | Use Case                          | Tools/Frameworks      |
-| ------------ | --------------------------------- | --------------------- |
-| Web Frontend | Interactive UIs, SPAs             | React, Vue, Angular   |
-| Backend      | APIs, server-side apps            | Node.js, Express      |
-| Mobile       | iOS & Android apps                | React Native          |
-| Desktop      | Windows/Mac/Linux apps            | Electron              |
-| Games        | Web-based games, 2D/3D engines    | Phaser, Babylon.js    |
-| AI & Data    | Browser AI, visualization         | TensorFlow\.js, D3.js |
-| IoT          | Hardware control with JS          | Johnny-Five           |
-| Web3         | DApps, blockchain smart contracts | Web3.js, Ethers.js    |
-
----
 
 
 ## 🔍 How JavaScript Works in the Browser
@@ -334,7 +330,6 @@ if (age >= 18) {
 1. ✅ Write a basic `console.log()` in Replit
 2. ✅ Write "make tea" steps as a programming task
 3. ✅ Try out inline, internal, and external JS scripts
-4. ✅ Open console and run your first few JavaScript lines
 
 ---
 
