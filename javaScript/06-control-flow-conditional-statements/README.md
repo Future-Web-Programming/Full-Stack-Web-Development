@@ -1,4 +1,4 @@
-# 📘 Chapter 6: JavaScript Operators & Conditional Statements
+# 📘 Chapter 6: Control Flow (Conditional Statements)
 
 **🔥 Learn:  if/else, ternary, switch, nullish coalescing — with hands-on mini projects**
 
