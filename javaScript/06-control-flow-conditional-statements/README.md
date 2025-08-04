@@ -243,6 +243,5 @@ if (username === "admin" && password === "12345") {
 
 ## 📁 Homework:
 
-1. Create a weather condition checker using `switch`.
-2. Use ternary to show `"Even"` or `"Odd"` for a number.
-3. Use `??` to fallback a user profile field (like bio or name).
+1. Use ternary to show `"Even"` or `"Odd"` for a number.
+2. Use `??` to fallback a user profile field (like bio or name).
