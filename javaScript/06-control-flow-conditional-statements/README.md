@@ -201,14 +201,6 @@ console.log(displayName); // Guest
 
 Agar left value `null` ya `undefined` ho to right value use hoti hai.
 
-### ❗ Difference with OR `||`
-
-```js
-let userAge = 0;
-
-console.log(userAge || 25);   // 25 ❌ (because 0 is falsy)
-console.log(userAge ?? 25);   // 0 ✅ (because it's not null/undefined)
-```
 
 ---
 
