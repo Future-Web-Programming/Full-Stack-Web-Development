@@ -3,10 +3,175 @@
 **🔥 Learn:  if/else, ternary, switch, nullish coalescing — with hands-on mini projects**
 
 
+## Projects 
+
+**Vote Eligbility Checker** 
+
+**Month pridictor based on the number***
+
+and many more.
 
 ## Control flow or Condtional Statements
 
-### ✅ if, else, else if:
+### ✅ if, 
+The if statement executes block if a condition is true
+```js
+if( condition )
+   statement;
+```
+The condition can be a value or an expression. Typically, the condition evaluates to a boolean value, which is true or false.
+
+If the condition evaluates to true, the if statement executes the statement. Otherwise, the if statement passes the control to the next statement after it.
+
+If you have more than one statement to execute, you need to wrap them in a block using a pair of curly braces ({}) as follows:
+
+
+```js
+if (condition) {
+  // statements to execute
+}
+```
+
+```js
+let age = 18;
+if (age >= 18) {
+  console.log('You can sign up');
+}
+```
+
+## Nested If statement
+
+It’s possible to use an if statement inside another if statement. 
+
+```js
+let age = 18;
+let state = 'PU';
+
+if (state == 'PU') {
+  if (age >= 18) {
+    console.log('You can drive.');
+  }
+}
+```
+
+> Note: In practice, you should avoid using nested if statements as much as possible.
+
+For example, you can use the logical AND operator && to combine the conditions and use an if statements as follows:
+
+```js
+let age = 18;
+let state = 'PU';
+
+if (state == 'PU' && age == 18) {
+  console.log('You can drive.');
+}
+```
+## if else 
+
+The if statement executes a block if a condition is true. When the condition is false, it does nothing.
+
+But if you want to execute a statement if the condition is false, you can use an if...else statement.
+
+Here’s the syntax of the if...else statement:
+
+```js 
+if( condition ) {
+  // ...
+} else { 
+  // ...
+}
+```
+
+In this syntax, the condition is a value or an expression that evaluates to true or false. If the condition is true, the if...else statement executes the block that follows the if branch.
+
+If the condition is false, the if...else statement executes the block that follows the else branch.
+
+Typically, the condition evaluates to a boolean value, which is true or false. However, if it evaluates to a non-boolean value, the if...else statement will convert it to the boolean value.
+
+
+```js
+let age = 18;
+
+if (age >= 18) {
+  console.log('You can sign up.');
+} else {
+  console.log('You must be at least 18 to sign up.');
+}
+```
+The following example uses a logical operator AND (&&) as the condition in the if block:
+
+```js
+let age = 16;
+let country = 'USA';
+
+if (age >= 16 && country === 'USA') {
+  console.log('You can get a driving license.');
+} else {
+  console.log('You are not eligible to get a driving license.');
+}
+```
+
+## if else if
+
+The if an if…else statements accepts a single condition and executes the if or else block accordingly based on the condition.
+
+To check multiple conditions and execute the corresponding block if a condition is true, you use the if...else...if statement like this:
+
+```js
+if (condition1) {
+  // ...
+} else if (condition2) {
+  // ...
+} else if (condition3) {
+  //...
+} else {
+  //...
+}
+```
+
+In this syntax, the if...else...if statement has three conditions. In theory, you can have as many conditions as you want to, where each else...if branch has a condition.
+
+The if...else...if statement checks the conditions from top to bottom and executes the corresponding block if the condition is true.
+
+The if...else...if statement stops evaluating the remaining conditions as soon as a condition is true. For example, if the condition2 is true, the if...else...if statement won’t evaluate the condition3.
+
+If all the conditions are false, the if...else...if statement executes the block in the else branch.
+
+## Display month based on month number
+
+```js
+let month = 6;
+let monthName;
+
+if (month == 1) {
+  monthName = 'Jan';
+} else if (month == 2) {
+  monthName = 'Feb';
+} else if (month == 3) {
+  monthName = 'Mar';
+} else if (month == 4) {
+  monthName = 'Apr';
+} else if (month == 5) {
+  monthName = 'May';
+} else if (month == 6) {
+  monthName = 'Jun';
+} else if (month == 7) {
+  monthName = 'Jul';
+} else if (month == 8) {
+  monthName = 'Aug';
+} else if (month == 9) {
+  monthName = 'Sep';
+} else if (month == 10) {
+  monthName = 'Oct';
+} else if (month == 11) {
+  monthName = 'Nov';
+} else if (month == 12) {
+  monthName = 'Dec';
+} else {
+  monthName = 'Invalid month';
+}
+console.log(monthName);
+```
 
 ```js
 let score = 85;
@@ -38,6 +203,7 @@ if (marks >= 90) {
 }
 ```
 
+
 ---
 
 ## ✅ Ternary Operator (`? :`)
@@ -65,6 +231,7 @@ The ternary operator takes three operands, hence, the name ternary operator. It 
 
 Let's write a program to determine if a student passed or failed in the exam based on marks obtained.
 
+## vote eligiblity checker
 ```js
 // program to check pass or fail
 
@@ -142,21 +309,65 @@ document.body.style.backgroundColor = bgColor;
 
 **(multiple condition alternative)**
 
+switch statement evaluates an expression, compares its results with case values, and executes the statement associated with the matching case value.
+
+The following illustrates the syntax of the switch statement:
+
+```js
+switch (expression) {
+    case value1:
+        statement1;
+        break;
+    case value2:
+        statement2;
+        break;
+    case value3:
+        statement3;
+        break;
+    default:
+        statement;
+}
+```
+## How it works.
+
+First, evaluate the expression inside the parentheses after the switch keyword.
+
+Second, compare the result of the expression with the value1, value2, … in the case branches from top to bottom. 
+
+The switch statement uses the strict comparison (===).
+
+Third, execute the statement in the case branch where the result of the expression equals the value that follows the case keyword. 
+
+The break statement exits the switch statement. If you omit the break statement, the code execution falls through the original case branch into the next one. 
+
+If the result of the expression does not strictly equal any value, the switch statement will execute the statement in the default branch.
+
+The switch statement will stop comparing the expression‘s result with the remaining case values as long as it finds a match.
+
+The switch statement is like the if…else…if statement. But it has more readable syntax.
+
+> Note: In practice, you often use a switch statement to replace a complex if-else-if statement to make the code more readable.
+
+
+## Get Day of the week using Switch 
+
 ```js
 let day = 2;
+let dayName;
 switch (day) {
   case 1:
-    console.log("Monday");
+    dayName = ("Monday");
     break;
   case 2:
-    console.log("Tuesday");
+    dayName = ("Tuesday");
     break;
   case 3:
-    console.log("Wednesday");
+    dayName = ("Wednesday");
     break;
   default:
-    console.log("Invalid day");
+    dayName = ("Invalid day");
 }
+console.log(dayName)
 ```
 
 ### 📌 Urdu Explanation:
@@ -190,6 +401,36 @@ switch (today) {
 ## ✅ Nullish Coalescing Operator (`??`)
 
 **(fallback for `null` or `undefined` only)**
+ES2020 introduced the nullish coalescing operator denoted by the double question marks (??). The nullish coalescing operator is a logical operator that accepts two values:
+
+The nullish coalescing operator returns the second value (value2) if the first value (value2) is null or undefined. Technically, the nullish coalescing operator is equivalent to the following block:
+
+```js
+const result = value1;
+if(result === null || result === undefined) {
+   result = value2;
+}
+```
+## Why nullish coalescing operator
+When assigning a default value to a variable, you often use the logical OR operator (||). For example:
+```js
+let count;
+let result = count || 1 ;
+console.log(result); // 1
+```
+
+In this example, the count variable is undefined, it is coerced to false. Therefore, the result is 1.
+
+However, the logical OR operator (||) sometimes is confusing if you consider 0 or empty strings '' as a valid value like this:
+
+```js
+let count = 0;
+let result = count || 1;
+```
+The result is 1, not 0, which you may not expect.
+
+The nullish coalescing operator helps you to avoid this pitfall. It only returns the second value when the first one is either null or undefined.
+
 
 ```js
 let username = null;
