@@ -1,52 +1,57 @@
-// apply dark theme
-let theme = 'dark'
+// basic simple calculator project
 
-let themeColor = theme === 'dark' ? "#1f1f1f" : "#fff";
-let textColor = theme === 'dark' ? "#fff" : "#000";
-document.body.style.backgroundColor = themeColor;
-document.body.style.color = textColor;
-
-
-// let num1 = Number(prompt("Enter 1st Number"));
-// let num2 = Number(prompt("Enter 2nd Number"));
-// let result;
-// let operator  = prompt("Enter Operator: e.g + , - , * , / , %");
-
-// if(operator == "+"){
-//     result = num1 + num2;
-// }else if(operator == "-"){
-//     result = num1 - num2;
-// }else if(operator == "*"){
-//     result = num1 * num2;
+// let number1 = Number(prompt("Please Enter Number 1"))
+// let number2 = Number(prompt("Please Enter Number 2"))
+// let operator = prompt("Please Enter Operator eg. + , - , / , * , %");
+// let answer;
+// if(operator == '+'){
+//     answer = number1 + number2;
+// }else if(operator == '-'){
+//     answer = number1 - number2;
+// }else if(operator == '*'){
+//     answer = number1 * number2;
 // }else if(operator == '/'){
-//     result = num1 / num2;
+//     answer = number1 / number2;
 // }else if(operator == '%'){
-//     result = num1 % num2;
-// }else{
-//     alert("Sorry Invalid Operator")
+//     answer = number1 % number2;
+// }else {
+//     answer = "Invalid Operator";
 // }
 
-// alert(result)
+// alert(answer);
+
+// BMI Calculator 
+
+// let weight = Number(prompt("Please Enter your Weight, eg. 92.4"));
+// let height = (prompt("Please Enter your height eg. 5.9"));
 
 
-// BMI calcuator
 
-let weight = prompt('Enter ur Weight');
-let height = prompt("Enter your height");
+// height = height.split('.');
 
-// bmi formula
+// let heightIntoFeet = Number(height[0]) * 0.3048;
+// let heightIntoInches = Number(height[1]) * 0.0254;
 
-let bmi = weight / (height * height);
-let weightStatus;
+// let totalHeightIntoMeeter = heightIntoFeet + heightIntoInches;
 
-if(bmi <= 36){
-    weightStatus = ("Underweight");
-}else if(bmi >= 36 &&  bmi <= 66){
-    weightStatus = ("Healthy Weight")
-}else if(bmi >= 66 && bmi <= 66){
-    weightStatus = ("Overweight")
-}else{
-    weightStatus = ("Obsity")
-}
+// // BMI Formula
 
-alert(weightStatus);
+// const BMI = weight / totalHeightIntoMeeter ** 2;
+// console.log(BMI);
+// let weightStatus;
+
+// if(BMI <= 18.5){
+//     weightStatus = "Underweight";
+// }else if(BMI >= 18.5 && BMI <= 24.9){
+//     weightStatus = "Normal Weight / Healthy Weight";
+// }else if(BMI >= 25 && BMI <= 29.9){
+//     weightStatus = "Overweight";
+// }else {
+//     weightStatus = "Obess";
+// }
+
+// alert("You are " + weightStatus);
+
+
+// // console.log(typeof heightIntoFeet)
+// // console.log(heightIntoInches)
