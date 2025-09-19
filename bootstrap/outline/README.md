@@ -1,7 +1,7 @@
-# 🌍 **Bootstrap Mastery: Complete Free Course Outline (2025 YouTube Edition)**
+# 🌍 **Bootstrap Mastery: from basic to Advance**
 
 **🚀 From Zero to UI Hero — Build Stunning, Responsive Websites with Bootstrap 5 & Beyond**
-*Taught by Future Programming (Pakistan & India)*
+*Taught by Future Programming *
 
 ---
 

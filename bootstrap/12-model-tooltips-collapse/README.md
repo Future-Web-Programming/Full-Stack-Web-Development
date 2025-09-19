@@ -1,4 +1,4 @@
-# 📚 Chapter 14: Bootstrap Modal, Collapse, and Tooltips
+# 📚 Chapter 12: Bootstrap Modal, Collapse, and Tooltips
 
 **Level:** Intermediate
 **Module:** JavaScript-powered Bootstrap components
